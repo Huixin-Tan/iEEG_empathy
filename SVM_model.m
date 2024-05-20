@@ -32,7 +32,6 @@ function [test_accuracy_for_iter, class_weight_for_iter] = SVM_model(temp_featur
 
 
 
-       %% Best hyperparameters
        Md1 = fitcsvm(x_train,y_train,'KernelFunction','linear','Solver','SMO'); 
 
       %% Final test with test set
